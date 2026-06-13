@@ -23,7 +23,6 @@ function App() {
   };
 
   useEffect(() => {
-    // Force the entire browser viewport background to stay pure white
     document.body.style.backgroundColor = '#ffffff';
     document.body.style.margin = '0';
     document.body.style.padding = '0';

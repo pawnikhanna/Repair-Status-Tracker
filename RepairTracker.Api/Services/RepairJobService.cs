@@ -28,7 +28,6 @@ namespace RepairTracker.Api.Services
                 return false; // Job does not exist
             }
 
-            // Explicit validation check: ensure value falls directly within enum bounds
             if (!Enum.IsDefined(typeof(RepairStatus), newStatus))
             {
                 throw new ArgumentException("The specified state change validation failed due to an unknown status.");
